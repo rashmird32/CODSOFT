@@ -1,0 +1,191 @@
+body {
+  background-image: url(/assests/back-blue.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #d7c1c1;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+  /* position: fixed;
+  width: 100%; */
+}
+#logo img {
+  width: 20%;
+}
+section {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+hr {
+  border: 1px solid rgb(3, 7, 65);
+}
+#skills-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+#logo {
+  font-size: 1.5em;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #125688;
+  color: white;
+}
+
+#about-me {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+#about-me img {
+  border-radius: 50%;
+  box-shadow: 0 1px 8px #ddd;
+}
+#about-me-desc {
+  padding: 30px;
+  padding-left: 95px;
+}
+#about-me-desc h1 {
+  font-size: 30px;
+}
+#about-me-desc p {
+  width: 90%;
+}
+#about-me button {
+  background-color: #2c312f;
+  border-radius: 20px;
+  color: rgb(193, 185, 229);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#about-me button a:link {
+  color: rgb(232, 240, 232);
+  background-color: transparent;
+  text-decoration: none;
+}
+/* Skills styling */
+#skills img {
+  width: 100px;
+  justify-content: space-between;
+}
+#skills h3 {
+  text-align: center;
+}
+
+/* projects styling */
+.project-items {
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 40px 100px;
+  gap: 150px;
+}
+#projects h3 {
+  text-align: center;
+}
+.project-desc {
+  text-align: left;
+}
+.project-items img {
+  border-radius: 5px;
+}
+.project-desc h4 {
+  margin-block-start: unset;
+}
+.project-desc button,
+.company button {
+  background-color: #2c312f;
+  border-radius: 5px;
+  color: rgb(80, 46, 230);
+  /* padding: 10px 20px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.project-desc p {
+  width: 80%;
+}
+
+/* experience styling */
+#experience h3 {
+  text-align: center;
+}
+.experience-order {
+  display: flex;
+  padding: 40px 100px;
+  gap: 170px;
+}
+.company h4 {
+  margin-block-start: unset;
+}
+.year {
+  width: 30%;
+}
+.experience-order p {
+  width: 80%;
+}
+/* Contact styling */
+.contact-details {
+  text-align: center;
+}
+
+/* css animations */
+@keyframes rtl {
+  from {
+    left: 200px;
+    top: 0px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes ltr {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 50px;
+    top: 0px;
+  }
+}
+.project-desc,
+.company {
+  position: relative;
+  animation-name: rtl;
+  animation-duration: 4s;
+  /* animation-timeline: scroll(); */
+}
+.project-items img,
+.year {
+  position: relative;
+  animation-name: ltr;
+  animation-duration: 4s;
+}
